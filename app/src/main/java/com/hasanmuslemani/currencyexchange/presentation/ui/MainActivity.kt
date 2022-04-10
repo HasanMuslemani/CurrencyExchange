@@ -1,7 +1,8 @@
-package com.hasanmuslemani.currencyexchange
+package com.hasanmuslemani.currencyexchange.presentation.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.hasanmuslemani.currencyexchange.R
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
