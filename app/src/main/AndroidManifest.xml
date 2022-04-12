@@ -12,7 +12,9 @@
         android:theme="@style/Theme.CurrencyExchange">
         <activity
             android:name=".presentation.ui.MainActivity"
-            android:exported="true">
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.CurrencyExchange">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

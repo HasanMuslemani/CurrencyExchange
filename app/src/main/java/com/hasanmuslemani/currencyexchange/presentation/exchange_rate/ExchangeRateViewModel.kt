@@ -4,6 +4,7 @@ import androidx.compose.runtime.State
 import androidx.compose.runtime.mutableStateOf
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
+import com.hasanmuslemani.currencyexchange.common.Constants
 import com.hasanmuslemani.currencyexchange.common.Resource
 import com.hasanmuslemani.currencyexchange.domain.use_case.get_exchange_rate.GetExchangeRateUseCase
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -13,7 +14,6 @@ import javax.inject.Inject
 @HiltViewModel
 class ExchangeRateViewModel @Inject constructor(
     private val getExchRateUseCase: GetExchangeRateUseCase,
-    private val savedStateHandle: SavedStateHandle
 ) : ViewModel() {
 
     private val _state = mutableStateOf(ExchangeRateState())
